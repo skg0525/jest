@@ -295,10 +295,10 @@ var jsonlint = (function() {
         newState,
         expected;
       while (true) {
-        // retreive state number from top of stack
+        // retrieve state number from top of stack
         state = stack[stack.length - 1];
 
-        // use default actions if available
+        // use default actions if available 
         if (this.defaultActions[state]) {
           action = this.defaultActions[state];
         } else {
